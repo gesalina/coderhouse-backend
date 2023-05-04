@@ -8,8 +8,13 @@ class ProductManager {
     this.#products = [];
     this.#error = undefined;
   }
+  /*
+  * Get all the products
+  */
   getProducts = () => this.#products;
-
+  /*
+  * Get products by ID
+  */
   getElementById = (id) => {
     const findElement = this.#products.find((product) => product.id === id);
     if (!findElement) return `[${id} no existe]`;
@@ -60,9 +65,11 @@ class ProductManager {
     else console.log(this.#error);
   };
 }
-
-let test = new ProductManager();
-test.addProduct(
+/*
+ * Test functions
+ */
+let manageProduct = new ProductManager();
+manageProduct.addProduct(
   "Alfajor",
   "Alfajor bañado en chocolate",
   120,
@@ -70,7 +77,7 @@ test.addProduct(
   "ALF101",
   10
 );
-test.addProduct(
+manageProduct.addProduct(
   "Barra de cereal",
   "Barra de cereal con semillas",
   350,
@@ -78,7 +85,7 @@ test.addProduct(
   "CER101",
   25
 );
-test.addProduct(
+manageProduct.addProduct(
   "Chicle de frutilla",
   "Chicle sabor frutilla",
   15,
@@ -87,7 +94,7 @@ test.addProduct(
   50
 );
 // Producto con errores
-test.addProduct(
+manageProduct.addProduct(
   "Caramelo de frutilla",
   "Caramelo sabor a frutilla",
   "img/caramelof.png",
@@ -95,7 +102,7 @@ test.addProduct(
   120
 );
 // Producto existente
-test.addProduct(
+manageProduct.addProduct(
   "Caramelo de frutilla",
   "Caramelo sabor a frutilla",
   10,
@@ -103,7 +110,7 @@ test.addProduct(
   "CER101",
   120
 );
-console.log(test.getProducts());
-console.log(test.getElementById(1));
-console.log(test.getElementById(3));
+console.log(manageProduct.getProducts());
+console.log(manageProduct.getElementById(1));
+console.log(manageProduct.getElementById(3));
 console.log(test.getElementById(6));
