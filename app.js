@@ -4,6 +4,7 @@ class ProductManager {
    */
   #products;
   #error;
+  
   constructor() {
     this.#products = [];
     this.#error = undefined;
