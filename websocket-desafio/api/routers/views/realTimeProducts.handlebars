@@ -1,0 +1,40 @@
+<h1>Productos en tiempo real</h1>
+<div style="display:grid;width:20%">
+<label for="">ID</label>
+<input type="number" name="id" id="">
+<label for="">Titulo</label>
+<input type="text" name="title" id="">
+<label for="">Descripcion</label>
+<input type="text" name="description" id="">
+<label for="">Precio</label>
+<input type="text" name="price" id="">
+<label for="">Imagen</label>
+<input type="text" name="thumbnail" id="">
+<label for="">Codigo</label>
+<input type="text" name="code" id="">
+<label for="">Stock</label>
+<input type="number" name="stock" id="">
+</div>
+{{#each products}}
+<div id="productList">
+    <li>
+    <a>ID: {{ this.id }}</a>
+    <br>
+    <a>Titulo: {{ this.title }}</a>
+    <br>
+    <a>Descripcion: {{ this.description }}</a>
+    <br>
+    <a>Precio: {{ this.price }}</a>
+    <br>
+    <a>Imagen: {{ this.thumbnail }}</a>
+    <br>
+    <a>Codigo: {{ this.code }}</a>
+    <br>
+    <a>Stock: {{ this.stock }}</a>
+    </li>
+</div>
+{{/each}}
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/content/js/index.js"></script>

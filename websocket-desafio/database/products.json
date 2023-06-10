@@ -1,0 +1,76 @@
+[
+	{
+		"id": 1,
+		"title": "Notebook Raza Intel Core i7",
+		"description": "Notebook gamer base",
+		"price": 198999,
+		"thumbnail": "img/Razai7.png",
+		"code": "NGB77",
+		"stock": 2
+	},
+	{
+		"id": 3,
+		"title": "Notebook Raza Intel Core i9",
+		"description": "Notebook gamer con componente de ultima generacion",
+		"price": 525230,
+		"thumbnail": "img/razai9.png",
+		"code": "NTR801",
+		"stock": 2
+	},
+	{
+		"id": 4,
+		"title": "Monitor ELG 45 pulgadas 244Hz",
+		"description": "Monitor 45 pulgadas y 244Hz marca ELG, con conexion HDMI",
+		"price": 120350,
+		"thumbnail": "img/monielg.png",
+		"code": "MON553",
+		"stock": 6
+	},
+	{
+		"id": 5,
+		"title": "Nuevo producto",
+		"description": "nuevo nuevo",
+		"price": 200,
+		"thumbnail": "none.app",
+		"code": "AB201",
+		"stock": 1
+	},
+	{
+		"id": 6,
+		"title": "Nuevo producto",
+		"description": "nuevo nuevo",
+		"price": 200,
+		"thumbnail": "none.app",
+		"code": "AB101",
+		"stock": 1
+	},
+	{
+		"id": 7,
+		"title": "Nuevo producto",
+		"description": "nuevo nuevo",
+		"price": 200,
+		"thumbnail": "none.app",
+		"code": "AB01",
+		"stock": 1
+	},
+	{
+		"id": 8,
+		"title": "Nuevo producto",
+		"description": "nuevo nuevo",
+		"price": 200,
+		"thumbnail": "none.app",
+		"code": "A201",
+		"status": true,
+		"stock": 1
+	},
+	{
+		"id": 9,
+		"title": "Prueba 2",
+		"description": "prueba nuevo",
+		"price": 200,
+		"thumbnail": "aa.app",
+		"code": "amba3",
+		"status": false,
+		"stock": 30
+	}
+]
